@@ -40,7 +40,7 @@ const IndexPage = () => {
     <div className="container">
       <style jsx>
         {`
-          @import url('https://fonts.googleapis.com/css?family=Sarabun&display=swap');  
+          @import url('https://fonts.googleapis.com/css?family=Sarabun&display=swap');
 
           * {
             font-family: 'Sarabun', sans-serif;
@@ -74,11 +74,13 @@ const IndexPage = () => {
       <DataChart data={data.Countries} title="Summary" />
 
       <TimeSeriesChart data={timeseries.Thailand} title="Thailand Summary" />
+      <TimeSeriesChart data={timeseries.Japan} title="Japan Summary" />
       <TimeSeriesChart data={timeseries.US} title="US Summary" />
       <TimeSeriesChart data={timeseries.China} title="China Summary" />
 
       <footer>
         <p>
+          <label>E-mail : </label>
           <a
             href="https://github.com/salmondev"
             target="_blank"
@@ -86,7 +88,7 @@ const IndexPage = () => {
           >
             army    
           </a>
-          {' @ '}
+          {'@'}
           <a
             href="https://panurut.dev"
             target="_blank"
